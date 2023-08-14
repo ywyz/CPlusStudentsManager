@@ -18,9 +18,21 @@
     <ClInclude Include="Course.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Students.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Students.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
