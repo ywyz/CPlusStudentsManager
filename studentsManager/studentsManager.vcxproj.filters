@@ -15,24 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Course.h">
+    <ClInclude Include="data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Students.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Functions.h">
+    <ClInclude Include="Manager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Course.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Students.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Functions.cpp">
+    <ClCompile Include="Manager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
