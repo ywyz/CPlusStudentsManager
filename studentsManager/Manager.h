@@ -23,7 +23,6 @@ public:
 	void show_Import();
 	void show_Query();
 	void clear_Screen() noexcept;
-
 	/*ÔöÉ¾¸Ä²é*/
 	void add_Student();
 	void add_Course();
@@ -31,9 +30,14 @@ public:
 	void delete_Student();
 	void delete_Course();
 	void delete_CourseSelect();
-	Student query_Student();
-	Course query_Course();
-	CourseSelect query_CourseSelect();
+	void query_Student();
+	Student query_Student(long id);
+	Student query_Student(string name£©;
+	void query_Course();
+	Course query_Course(long id);
+	Course query_Course(string name);
+	void query_CourseSelect();
+	CourseSelect query_CourseSelect(long id);
 	void edit_Student();
 	void edit_Course();
 	void edit_CourseSelect();

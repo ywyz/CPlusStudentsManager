@@ -197,7 +197,30 @@ void Manager::add_CourseSelect()
 	courseSelects.push_back(courseSelect);
 }
 
-Student Manager::query_Student()
+
+Student Manager::query_Student(long id)
+{
+	for (auto it = students.begin(); it != students.end(); it++)
+	{
+		if (id == (*it).id)
+			return (*it);
+	}
+	cout << "未找到该学生" << endl;
+	return;
+}
+
+Student Manager::query_Student(string name)
+{
+	for (auto it = students.begin(); it != students.end(); it++)
+	{
+		if (name == (*it).name)
+			return (*it);
+	}
+	cout << "未找到该学生" << endl;
+	return;
+}
+
+void Manager::query_Student()
 {
 	cout << "请选择查询方式：" << endl;
 	cout << "1.按学号查询" << endl;
@@ -211,13 +234,9 @@ Student Manager::query_Student()
 		cout << "请输入学号：";
 		long stu_id;
 		cin >> stu_id;
-		for (auto it = students.begin(); it != students.end(); it++)
-		{
-			if (stu_id == (*it).id)
-				return (*it);
-		}
-		cout << "未找到该学生" << endl;
-		return;
+		Students temp = this->query_Student(stu_id);
+		if(temp != NULL)
+
 	}
 
 	else
@@ -234,4 +253,10 @@ Student Manager::query_Student()
 	cout << "未找到该学生" << endl;
 	}
 	return;
+}
+
+void Manager::show_Student(&stu)
+{
+	cout << "学号：" << stu.id << endl;
+	cout <<
 }
